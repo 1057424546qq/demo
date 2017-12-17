@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_396554_1xpu360e9418aor.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <style>
+    	*{
+    		margin:0;padding:0;
+    	}
+    	body{
+    		background-color:#293038;
+    	}
+      .sidebar-content{
+        width: 100%;
+        overflow: hidden;
+      }
+      div,.sidebar-title{
+        font-size: 14px;
+        vertical-align: baseline;
+      }
+      a{
+        
+        background-color: #37424f;
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        text-decoration: none;
+        text-align: center;
+      }
+      .sidebar-nav{
+        position: relative;
+      }
+      .text-normal{
+        display: block;
+        width: 100%;
+        height: 40px;
+        border-bottom: 1px solid #414d5c;
+      }
+    .iconfont{
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        color: #fff;
+      }
+      .icon{
+        position: absolute;
+        top:13px;
+        left:25%;
+      }
+      /*.sidebar-trans{
+      	display: none;
+      }*/
+    </style>
+  </head>
+  <body >
+<div class="view-body">
+      <div class="view-sidebar">
+        <div class="sidebar-content">
+
+
+          <div class="sidebar-nav">
+
+            <div class="sidebar-title">
+                <span class="icon"><b class="fl iconfont icon-sanjiaoxing-copy-copy"></b></span>
+                <span class="text-normal"><a href="#">信息管理</a></span>
+            </div>
+
+            <ul class="sidebar-trans">
+              <li>
+                  <span class="text-normal"><a href="http://localhost/student_list.php" target="rightFrame" style="background-color: #5e748e;">员工信息</a></span>
+                </a>
+              </li>
+              <li>
+                  <span class="text-normal"><a href="student.html" target="rightFrame">添加信息</a></span>
+                </a>
+              </li>
+           </ul>
+          </div>
+
+          <div class="sidebar-nav">
+            <div class="sidebar-title">
+              
+                <span class="icon"><b class="fl iconfont icon-sanjiaoxing-copy-copy"></b></span>
+                <span class="text-normal"><a href="#">用户中心</a></span>
+              
+            </div>
+
+            <ul class="sidebar-trans" style="display: none;">
+              <li>
+                  <span class="text-normal"><a href="page2.html" target="rightFrame">账号管理</a></span>
+              </li>
+              <li>
+                  <span class="text-normal"><a href="#" target="_self">实名认证</a></span>
+              </li>
+              <li>
+                  <span class="text-normal"><a href="page3.html" target="rightFrame">消息中心</a></span>
+              </li>
+              <li>
+                  <span class="text-normal"><a href="#" target="_self">金币管理</a></span>
+              </li>
+              <li>
+                  <span class="text-normal"><a href="#" target="_self">订单管理</a></span>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+</div>
+      <script>
+//    $('.sidebar-trans').css('display','none');
+        $('.sidebar-title').click(function(){
+          var n =$('.sidebar-title').index($(this));
+            $('.sidebar-trans').eq(n).slideToggle();
+            $('.sidebar-title>span>a').css('backgroundColor','#37424f');
+            $('.sidebar-title>span>a').eq(n).css('backgroundColor','#5e748e');
+//          $('iconfont').eq(0).className('');
+        });
+        
+        $('.text-normal a').click(function(){
+        		$('.text-normal a').css('backgroundColor','5e748e')
+        });
+      </script>
+  </body>
+</html>

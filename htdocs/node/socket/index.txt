@@ -1,0 +1,13 @@
+socket 简介
+
+1、传统方式
+2、异步通信 Ajax
+3、socket emit('事件名称','事件、数据')
+		  on('事件名称','事件、数据')
+	客户端 socket.io.js
+		emit('ok',发送数据) 
+		on()   事件
+	服务端 socket.io
+		emit() 
+		on('ok',事件)
+

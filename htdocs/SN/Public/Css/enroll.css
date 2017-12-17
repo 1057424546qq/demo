@@ -1,0 +1,311 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background-color: #f5f5f5;
+}
+a{
+	text-decoration: none;
+	color:#333;
+	font-size: 12px;
+}
+a:hover{
+	color:#f60;
+}
+em,i{
+	font-style: normal;
+}
+ul li{
+	list-style: none;
+	float: left;
+}
+.clearfix:after{
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+}
+.header{
+	width: 100%;
+	margin-top: 30px;
+}
+.hd{
+	width: 970px;
+	height: 88px;
+	margin:0px auto;
+}
+.friend{
+	float: right;
+	height: 100%;
+	line-height: 88px;
+}
+.logo{
+	height: 100%;
+	float: left;
+}
+.logo-pic{
+	float: left;
+	width: 189px;
+	height: 100%;
+	margin-right: 24px;
+	background: url(../img/logo.png) no-repeat;
+}
+.logo-txt{
+	height: 100%;
+	float: left;
+	font-size: 18px;
+	color:#666;
+	line-height: 65px;
+	font-weight: 400;
+}
+.center{
+	width: 100%;
+	margin-top: -20px;
+}
+.main{
+	width: 990px;
+	margin:0 auto;
+	border:1px solid #ddd;
+	border-top:3px solid #f90;
+	background: #fff;
+	padding:55px 0;
+}
+.reg-form{
+	width: 380px;
+	margin:0 auto;
+}
+.gift{
+	font-size: 14px;
+	line-height: 17px;
+	padding-left: 2px;
+	margin-bottom: 17px;
+}
+.gift i{
+	float: left;
+	display: inline-block;
+	width: 19px;
+	height: 17px;
+	margin-right: 6px;
+	background: url(../img/spriteImg.png) no-repeat -75px -93px;
+}
+.gift em{
+	color:#f40;
+}
+.input-box{
+	width: 378px;
+	height: 38px;
+	line-height: 37px;
+	margin-bottom: 25px;
+	border:1px solid #ccc;
+}
+.input-box .title{
+	float: left;
+	width: 76px;
+	padding-left:11px;
+	font-size:12px;
+}
+.inp{
+	width: 291px;
+	position: relative;
+	float: left;
+	height: 100%;
+}
+.into{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 14px;
+	color:#333;
+	outline: none;
+	border:0;
+}
+.place{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left:0;
+	color:#cacaca;
+	font-size: 12px;
+	cursor: text;
+}
+i.ok{
+	position: absolute;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	top:11px;
+	right:12px;
+	background: url(../img/spriteImg.png) no-repeat -120px -93px;
+	display: none;
+}
+i.eye{
+	position: absolute;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	top:11px;
+	right:12px;
+	background: url(../img/spriteImg.png) no-repeat -50px -93px;
+	display: none;
+}
+.error-msg{
+	height: 22px;
+	line-height: 22px;
+	margin:-25px 0 3px;
+	color:red;
+	font-size: 12px;
+	display: none;
+}
+.wrap{
+	width: 142px;
+}
+.send-msg{
+    float: left;
+    width: 148px;
+    height: 100%;
+    line-height: 38px;
+    text-align: center;
+    background: #f5f5f5;
+    border: 1px solid #bbb;
+    font-size: 14px;
+    margin: -1px -1px 0 0;
+}
+.ph{
+	margin-bottom:42px;
+}
+.last{
+	margin-bottom: 0;
+}
+.tishi-msg{
+	height: 50px;
+}
+.hide{
+	display: none;
+}
+.suggestion{
+	line-height: 22px;
+}
+.suggestion em{
+	font-size: 12px;
+	color:#ddd;
+}
+.suggestion a{
+	display: inline-block;
+}
+.safe-level{
+	line-height: 22px;
+	font-size: 12px;
+}
+.safe-level span{
+	float: left;
+}
+.level{
+	display: inline-block;
+	width: 50px;
+	height: 16px;
+	text-align: center;
+	line-height: 16px;
+	margin-right: 2px;
+	color:2px;
+	color:#fff;
+	background: #cacaca;
+	margin-top:3px;
+}
+.other{
+	margin:0px auto;
+	width: 378px;
+	color:#666;
+	font-size: 12px;
+	line-height: 20px;
+}
+.select{
+	float: left;
+	margin:4px 5px 0 0;
+}
+.other a{
+	display:inline-block;
+	color:#222;
+	font-size: 12px;
+}
+.btn{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	margin:24px 0 5px;
+}
+.btn input{
+	display: inline-block;
+	background-color: #f60;
+	width: 100%;
+	height: 100%;
+	font-size: 20px;
+	color:#fff;
+	outline: none;
+	border:0;
+	font-weight: 400;
+	letter-spacing: 2px;
+}
+.btn a{
+	color:#f60;
+	font-size:14px;
+}
+.btn a i{
+	display: inline-block;
+	float: left;
+    width: 17px;
+    height: 15px;
+    background: url(../img/spriteImg.png) -141px -93px no-repeat;
+    margin: 13px 5px 0 0;
+}
+.ng-s-footer{
+	width: 100%;
+	min-width: 1190px;
+	padding-top:15px;
+	text-align: center;
+}
+.ng-s-f-con{
+	width: 1190px;
+	height: 160px;
+	min-width: 1190px;
+	margin:0 auto;
+}
+.ng-url-list{
+	height: 25px;
+	line-height: 25px;
+}
+.ng-url-list a{
+	color:#666;
+	font-size: 12px;
+}
+.ng-url-list span{
+	display:inline-block;
+	color:#888;
+	padding:0 8px;
+}
+.ng-copyright{
+	width: 1190px;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	color:#999;
+	font-size: 12px;
+	margin-top: 10px;
+}
+.ng-aut{
+	width: 1190px;
+	float: left;
+	height: 25px;
+	line-height: 25px;
+	margin-top:5px;
+	text-align: center;
+}
+.ng-aut a{
+	display: inline-block;
+	margin-right: 8px;
+}
+.ng-aut a img{
+	height: 24px;
+	width: 76px;
+}

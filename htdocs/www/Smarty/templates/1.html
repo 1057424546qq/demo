@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>{$title}</title>
+	</head>
+	<body>
+		<h1>{$num}</h1>
+		<p>id：<input type="text" name="id" value="{$arr.id}" /></p>
+		<p>姓名：<input type="text" name="name" value="{$arr.name}" /></p>
+		<p>性别:
+			男<input type="radio" name="sex" {if $arr.sex eq 1}checked{/if} value="1" />
+			女<input type="radio" name="sex" {if $arr.sex eq 2}checked{/if} value="2" />
+		</p>
+		<p>年龄：<input type="text" name="age" value="{$arr.age}" /></p>
+		
+		<ul>
+			{foreach $list as $v}
+			<li>{$v.id}:{$v.name} ￥{$v.price} <img src="{if $v.cover eq ''}/book/upload/{$v.cover}{else}/book/img/cover.jpg{/if}"  style="width: 100px;" /> </li>
+			{/foreach}
+		</ul>
+		
+		
+	</body>
+</html>

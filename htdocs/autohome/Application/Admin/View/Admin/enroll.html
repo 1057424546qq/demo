@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户注册</title>
+	<link rel="stylesheet" href="/Public/css/enroll.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="hd clearfix">
+			<a href="" class="logo"><img src="https://x.autoimg.cn/account//images/logo.jpg" alt="" /></a>
+			<span class="logo-txt">欢迎注册</span>
+			<a href="autohome_login.html" class="ghome">我已经注册，马上登录>></a>
+		</div>
+		
+	</div>
+	
+	<div class="center">
+		<div class="main">
+			<form id="form1" action="" method="post">
+				<div class="reg-form">
+					<div class="gift"><i></i>注册领<em>199</em>元大礼包</div>
+					<div class="info">
+						<div class="input-box clearfix">
+							<label for="num" class="title">手机号码</label>
+							<div class="inp">
+								<input type="text" class="into pNum" id="num">
+								<i class="ok oko"></i> 
+							</div>
+						</div>
+						<div class="hide error-msg" id="error1">注册手机号码格式错误！</div>	
+					</div>
+					<div class="info ph">
+						<div class="input-box clearfix">
+							<label for="yanzheng" class="title">手机验证码</label>
+							<div class="inp wrap">
+								<input type="text" class="into yz" id="yanzheng">
+							</div>
+							<a href="javascript:;" class="send-msg">获取短信验证码</a>
+						</div>
+						<div class="hide error-msg" id="error2">请输6位验证码！</div>
+					</div>
+					<div class="info">
+						<div class="input-box clearfix last">
+							<label for="pwd" class="title">设置密码</label>
+							<div class="inp">
+								<input type="text" class="into" id="pwd">
+								<i class="ok tok"></i>
+								<i class="eye"></i> 
+							</div>
+						</div>
+					</div>
+						<div class="tishi-msg">
+							<div class="suggestion hide"><em>6-20个字符，由字母，数字和符号的两种以上组合。</em><a href="javascript:void(0)">密码设置建议</a></div>
+							<div class="hide error-msg" id="pd">请输6位密码！</div>
+							<div class="safe-level clearfix hide">
+								<span>安全程度：</span>
+								<span class="level level1">低</span>
+								<span class="level level2">中</span>
+								<span class="level level3">高</span>
+							</div>
+							<div class="hide error-msg" id="error3">密码格式不正确！</div>
+						</div>
+					</div>
+					<div class="other">
+						<input type="checkbox" checked="checked" class="select">
+						<a href="">《苏宁易购会员章程》</a>
+						<a href="">《易付宝协议》</a>及
+						<a href="">《易付宝协议》</a>
+						<div class="btn">
+							<input type="submit" value="提交注册">
+							<a href="">
+								<i></i>
+								企业用户注册>
+							</a>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!-- 页面脚部 -->
+	<div  class="copyright">
+		<div class="copyright-content"> 
+			<span>© 2004-2017 www.autohome.com.cn All Rights Reserved. 汽车之家 版权所有 ·此页面有广告</span> 
+		</div>
+	</div>
+	
+	<script src="/Public/js/enroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>用户登录</title>
+	<link rel="stylesheet" href="css/login.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<div class="header">
+		<div class="hd clearfix">
+			<a href="" class="logo"></a>
+			<div class="tishi">
+				<div class="tishi-content">
+					<div class="bind-ph">为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！</div>
+					<a href="" class="advise">
+						<i></i>我想对“登录”提意见
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="banana">
+		<div class="login-c">
+			<a href="" class="single-link"></a>
+			<div class="login-form">
+				<div class="login-tab">
+					<ul class="login-way clearfix">
+						<li class="item active"><a href="javascript:;" class="login-tab-item">扫码登陆<i></i><span class="bottom-line"></span></a></li>
+						<li class="item"><a href="javascript:;" class="login-tab-item">帐号登录<i></i><span class="bottom-line"></span></a></li>
+					</ul>
+				</div>
+				<div class="scan-login show">
+					<div class="scan-box clearfix">
+						<div class="qrcode">
+							<img src="img/qrLoginUuidGenerate.png" alt="">
+						</div>
+						<div class="phone-scan"></div>
+					</div>
+					<div class="scan-error">
+						<div class="qrocde-exce">
+							<div class="mask"></div>
+							<p class="exception">二维码已失效</p>
+							<a href="javascript:;" class="btn">点击刷新</a>
+						</div>
+					</div>
+					<div class="success">
+						<i></i>
+						<p class="suc-txt">扫描成功</p>
+						<p class="reset">请勿刷新页面，按手机提示操作！</p>
+					</div>
+					<p class="open-app">
+						<i></i>打开
+						<a href="">苏宁易购APP</a>扫码登录
+					</p>
+				</div>
+				<div class="pc-login show non">
+					<div class="user-login">
+						<div class="form-box">
+							<div class="input-box">
+								<input type="text" value="用户名/手机/邮箱/门店会员卡号" id="user_name">
+								<i class="icon username-icon"></i>
+							</div>
+						</div>
+						<div class="form-box">
+							<div class="input-box pwd">
+								<input type="text" value="密码" id="password">
+								<i class="icon password-icon"></i>
+							</div>
+						</div>
+						<div class="login-help clearfix">
+							<a href="" class="info-login"><i class="phone-icon"></i>短信验证码登录</a>
+							<a href="" class="forget-pwd">忘记密码?</a>
+						</div>
+						<div class="tujiao"><a href="" class="submit">登 录</a></div>
+					</div>
+				</div>
+				<div class="free-reg">
+					<a href="">免费注册 有惊喜 ></a>
+				</div>
+				<div class="bind-login">
+					<span class="title">使用以下账号登录</span>
+					<div class="common clearfix">
+						<a href="" class="v-qq"><i></i>QQ</a>
+						<a href="" class="wx"><i></i>微信</a>
+						<a href="" class="yfb"><i></i>易付宝</a>
+						<a href="" class="hy">门店会员卡</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ng-s-footer">
+			<div class="ng-s-f-con">
+				<p class="ng-url-list">
+					<a href="http://www.suningholdings.com/" target="_blank">苏宁控股</a>
+					<span>|</span>
+					<a href="http://www.suning.cn/" target="_blank"> 苏宁云商</a>
+					<span>|</span>
+					<a href="http://10035.suning.com/" target="_blank"> 苏宁互联</a>
+					<span>|</span>
+					<a href="https://jinrong.suning.com" target="_blank">苏宁金融</a>
+					<span>|</span>
+					<a href="https://pay.suning.com/epp-epw/login/login.action?idsTrustFrom=suning&amp;ticket=ST1F1671F32556BC51442EB2ED516EB41D" target="_blank">苏宁支付</a>
+					<span>|</span>
+					<a href="http://www.pptv.com/?rcc_id=snyg" target="_blank">PPTV</a>
+					<span>|</span>
+					<a href="http://redbaby.suning.com/" target="_blank">红孩子</a>
+					<span>|</span>
+					<a href="http://wuliu.suning.com/slp/" target="_blank">苏宁物流</a>
+					<span>|</span>
+					<a href="http://cuxiao.suning.com/newUser.html" target="_blank">手机苏宁</a>
+					<span>|</span>
+					<a href="http://www.suninghotel.com/shors-web/pc/hotel/index.html" target="_blank">苏宁酒店</a>
+					<span>|</span>
+					<a href="http://ipp.suning.com/sips/toAgree.action" target="_blank">知识产权举报</a>
+				</p>
+				<p class="ng-url-list">
+					<a href="http://www.suningholdings.com/" target="_blank">联系我们</a>
+					<span>|</span>
+					<a href="http://www.suning.cn/" target="_blank">诚聘英才</a>
+					<span>|</span>
+					<a href="http://10035.suning.com/" target="_blank">供应商入驻</a>
+					<span>|</span>
+					<a href="https://jinrong.suning.com" target="_blank">广告平台</a>
+					<span>|</span>
+					<a href="https://pay.suning.com/epp-epw/login/login.action?idsTrustFrom=suning&amp;ticket=ST1F1671F32556BC51442EB2ED516EB41D" target="_blank">苏宁联盟</a>
+					<span>|</span>
+					<a href="http://www.pptv.com/?rcc_id=snyg" target="_blank">苏宁联盟</a>
+					<span>|</span>
+					<a href="http://redbaby.suning.com/" target="_blank">友情链接</a>
+					<span>|</span>
+					<a href="http://wuliu.suning.com/slp/" target="_blank">法律申明</a>
+					<span>|</span>
+					<a href="http://cuxiao.suning.com/newUser.html" target="_blank">用户体验提升计划</a>
+					<span>|</span>
+					<a href="http://www.suninghotel.com/shors-web/pc/hotel/index.html" target="_blank">股东会员认证</a>
+				</p>
+				<p class="ng-copyright">Copyright© 2002-2017 ，苏宁云商集团股份有限公司版权所有
+					<a href="http://www.miitbeian.gov.cn" target="_blank" style="color:#999">苏ICP备10207551号-4</a>
+					<span>|</span>
+					<a href="//res.suning.cn/public/v3/images/SUB1-20130131.png" target="_blank" style="color:#999">苏B1-20130131</a>
+					<span>|</span>
+					<a href="//res.suning.cn/public/v3/images/SUB2-20130376.png" target="_blank" style="color:#999">苏B2-20130376</a>
+					<span>|</span>
+					<a href="//res.suning.cn/public/v3/images/SUB2-20130376.png" target="_blank" style="color:#999">苏B2-20130391</a>
+                    出版物经营许可证新出发苏批字第A-243号
+				</p>
+				<div class="ng-aut">
+					<a href="https://search.szfw.org/cert/l/CX20111018000608000610" target="_blank">
+						<img src="img/chengxin.png">
+					</a>
+					<a href="http://image.suning.cn/uimg/snnet/snnetImg/142891196680527240.jpg" target="_blank">
+						<img src="img/unicom.png">
+					</a>
+					<a href="//res.suning.cn/public/v3/images/dianxin_content.jpg" target="_blank">
+						<img src="img/dianxin.jpg">
+					</a>
+					<a href="http://odr.jsdsgsxt.gov.cn/mbm/entweb/elec/certView.shtml?siteId=27cfad762f3d45069d79a9f8f83f458f" target="_blank">
+						<img src="img/dianzi.png">
+					</a>
+				</div>
+			</div>
+	</div>
+	<script src="js/login.js"></script>	
+</body>
+</html>

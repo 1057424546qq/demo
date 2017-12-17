@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://www.runoob.com/try/try.php?filename=bootstrap3-plugin-modal -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     
+    <title>菜鸟教程在线编辑器</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./菜鸟教程在线编辑器_files/bootstrap.min.css"> 
+    <script src="./菜鸟教程在线编辑器_files/ca-pub-5751451760833794.js"></script><script src="./菜鸟教程在线编辑器_files/codemirror.min.js"></script>
+	<link rel="stylesheet" href="./菜鸟教程在线编辑器_files/codemirror.min.css">
+	<script src="./菜鸟教程在线编辑器_files/htmlmixed.min.js"></script>
+	<script src="./菜鸟教程在线编辑器_files/css.min.js"></script>
+	<script src="./菜鸟教程在线编辑器_files/javascript.min.js"></script>
+	<script src="./菜鸟教程在线编辑器_files/xml.min.js"></script>
+	<script src="./菜鸟教程在线编辑器_files/closetag.min.js"></script>
+	<script src="./菜鸟教程在线编辑器_files/closebrackets.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+<style>
+body{min-height:300px;padding-top:90px;background: #f6f6f6;}.container{width:98%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.CodeMirror{min-height:300px}#textareaCode{min-height:300px}#iframeResult{display: block;overflow: hidden;border:0!important;min-width:100px;width:100%;min-height:300px;background-color:#fff}@media screen and (max-width:768px){#textareaCode{height:300px}.CodeMirror{height:300px}#iframeResult{height:300px}.form-inline{padding:6px 0 2px 0}}.logo h1{background-image:url(/images/logo-domain-white.png);background-repeat:no-repeat;text-indent:-9999px;width:160px;height:39px;margin-top:10px;display:block}
+</style>
+<nav class="navbar navbar-default navbar-fixed-top" style="background: #96b97d;">
+  <div class="container">
+    <div class="navbar-header logo"><h1>
+      <a target="_blank" href="http://www.runoob.com/" style="display: block;">RUNOOB.COM</a></h1>
+    </div>
+  </div>
+</nav>
+<div class="container">
+    <div class="row">
+    
+    <div class="col-sm-6">
+	<div class="panel panel-default"> 
+		<div class="panel-heading">
+			<form class="form-inline">
+      <div class="row">
+          <div class="col-xs-6">
+               <button type="button" class="btn btn-default">源代码：</button>
+            </div>
+            <div class="col-xs-6 text-right">
+              <button type="button" class="btn btn-success" onclick="submitTryit()" id="submitBTN"><span class="glyphicon glyphicon-send"></span> 点击运行</button>
+          </div>
+      </div>
+			</form>
+		</div>
+		<div class="panel-body">
+			<textarea class="form-control" id="textareaCode" name="textareaCode" style="display: none;">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8"&gt; 
+	&lt;title&gt;Bootstrap 实例 - 模态框（Modal）插件&lt;/title&gt;
+	&lt;link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"&gt;
+	&lt;script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"&gt;&lt;/script&gt;
+	&lt;script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;h2&gt;创建模态框（Modal）&lt;/h2&gt;
+&lt;!-- 按钮触发模态框 --&gt;
+&lt;button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal"&gt;
+	开始演示模态框
+&lt;/button&gt;
+&lt;!-- 模态框（Modal） --&gt;
+&lt;div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"&gt;
+	&lt;div class="modal-dialog"&gt;
+		&lt;div class="modal-content"&gt;
+			&lt;div class="modal-header"&gt;
+				&lt;button type="button" class="close" data-dismiss="modal" aria-hidden="true"&gt;
+					&amp;times;
+				&lt;/button&gt;
+				&lt;h4 class="modal-title" id="myModalLabel"&gt;
+					模态框（Modal）标题
+				&lt;/h4&gt;
+			&lt;/div&gt;
+			&lt;div class="modal-body"&gt;
+				在这里添加一些文本
+			&lt;/div&gt;
+			&lt;div class="modal-footer"&gt;
+				&lt;button type="button" class="btn btn-default" data-dismiss="modal"&gt;关闭
+				&lt;/button&gt;
+				&lt;button type="button" class="btn btn-primary"&gt;
+					提交更改
+				&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;&lt;!-- /.modal-content --&gt;
+	&lt;/div&gt;&lt;!-- /.modal --&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</textarea><div class="CodeMirror cm-s-default CodeMirror-focused" style="width: 100%; height: 581.4px;"><div style="overflow: hidden; position: relative; width: 3px; height: 0px; top: 284px; left: 4px;"><textarea autocorrect="off" autocapitalize="off" spellcheck="false" style="position: absolute; padding: 0px; width: 1000px; height: 1em; outline: none;" tabindex="0"></textarea></div><div class="CodeMirror-vscrollbar" cm-not-content="true" style="display: block; bottom: 15px;"><div style="min-width: 1px; height: 868px;"></div></div><div class="CodeMirror-hscrollbar" cm-not-content="true" style="display: block; right: 15px; left: 0px;"><div style="height: 100%; min-height: 1px; width: 973px;"></div></div><div class="CodeMirror-scrollbar-filler" cm-not-content="true" style="display: block; height: 15px; width: 15px;"></div><div class="CodeMirror-gutter-filler" cm-not-content="true"></div><div class="CodeMirror-scroll" tabindex="-1" draggable="false"><div class="CodeMirror-sizer" style="margin-left: 0px; margin-bottom: -15px; border-right-width: 15px; min-width: 972.922px; min-height: 868px; padding-right: 15px; padding-bottom: 15px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><pre>x</pre></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 280px; width: 964.922px; height: 20px;"></div><div class="CodeMirror-selected" style="position: absolute; left: 4px; top: 300px; width: 75.5938px; height: 20px;"></div></div><div class="CodeMirror-cursors" style=""></div><div class="CodeMirror-code"><pre class=""><span style="padding-right: 0.1px;"><span class="cm-meta">&lt;!DOCTYPE html&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">html</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">meta</span> <span class="cm-attribute">charset</span>=<span class="cm-string">"utf-8"</span><span class="cm-tag cm-bracket">&gt;</span> </span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;</span>Bootstrap 实例 - 模态框（Modal）插件<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">title</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">link</span> <span class="cm-attribute">rel</span>=<span class="cm-string">"stylesheet"</span> <span class="cm-attribute">href</span>=<span class="cm-string">"https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">src</span>=<span class="cm-string">"https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">script</span> <span class="cm-attribute">src</span>=<span class="cm-string">"https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"</span><span class="cm-tag cm-bracket">&gt;&lt;/</span><span class="cm-tag">script</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">head</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">body</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span cm-text="">​</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span>创建模态框（Modal）<span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h2</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">&lt;!-- 按钮触发模态框 --&gt;</span></span></pre><pre><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">class</span>=<span class="cm-string">"  "</span> <span class="cm-attribute">data-toggle</span>=<span class="cm-string">"modal"</span> <span class="cm-attribute">data-target</span>=<span class="cm-string">"#myModal"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span>开始演示模态框</span></pre><pre><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-comment">&lt;!-- 模态框（Modal） --&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"modal fade"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"myModal"</span> <span class="cm-attribute">tabindex</span>=<span class="cm-string">"-1"</span> <span class="cm-attribute">role</span>=<span class="cm-string">"dialog"</span> <span class="cm-attribute">aria-labelledby</span>=<span class="cm-string">"myModalLabel"</span> <span class="cm-attribute">aria-hidden</span>=<span class="cm-string">"true"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"modal-dialog"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"modal-content"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"modal-header"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">type</span>=<span class="cm-string">"button"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"close"</span> <span class="cm-attribute">data-dismiss</span>=<span class="cm-string">"modal"</span> <span class="cm-attribute">aria-hidden</span>=<span class="cm-string">"true"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-atom">&amp;times;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">h4</span> <span class="cm-attribute">class</span>=<span class="cm-string">"modal-title"</span> <span class="cm-attribute">id</span>=<span class="cm-string">"myModalLabel"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span>模态框（Modal）标题</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">h4</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"modal-body"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span>在这里添加一些文本</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">div</span> <span class="cm-attribute">class</span>=<span class="cm-string">"modal-footer"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">type</span>=<span class="cm-string">"button"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"btn btn-default"</span> <span class="cm-attribute">data-dismiss</span>=<span class="cm-string">"modal"</span><span class="cm-tag cm-bracket">&gt;</span>关闭</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;</span><span class="cm-tag">button</span> <span class="cm-attribute">type</span>=<span class="cm-string">"button"</span> <span class="cm-attribute">class</span>=<span class="cm-string">"btn btn-primary"</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span>提交更改</span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">button</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-comment">&lt;!-- /.modal-content --&gt;</span></span></pre><pre class=""><span style="padding-right: 0.1px;"><span class="cm-tab" role="presentation" cm-text="	">    </span><span class="cm-tag cm-bracket">&lt;/</span><span class="cm-tag">div</span><span class="cm-tag cm-bracket">&gt;</span><span class="cm-comment">&lt;!-- /.modal --&gt;</span></span></pre></div></div></div></div></div><div style="position: absolute; height: 15px; width: 1px; top: 883px;"></div><div class="CodeMirror-gutters" style="display: none; height: 898px;"></div></div></div>
+		</div>
+	</div>
+	</div>
+
+	<div class="col-sm-6">
+	<div class="panel panel-default"> 
+		<div class="panel-heading"><form class="form-inline"> <button type="button" class="btn btn-default">运行结果</button></form></div>
+		<div class="panel-body"><div id="iframewrapper"><iframe frameborder="0" id="iframeResult" style="height: 581.4px;" src="./菜鸟教程在线编辑器_files/saved_resource.html"></iframe></div></div>
+	</div>
+	</div>
+	
+	</div>
+
+	<footer>
+		<div class="row">
+			<div class="col-sm-12">
+      <div style="text-align: center;">
+        <script async="" src="./菜鸟教程在线编辑器_files/adsbygoogle.js"></script>
+        <!-- 移动版 自动调整 -->
+        <ins class="adsbygoogle" style="display:inline-block;min-width:300px;max-width:970px;width:100%;height:90px" data-ad-client="ca-pub-5751451760833794" data-ad-slot="1691338467" data-ad-format="horizontal" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:970px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:970px;background-color:transparent;"><iframe width="970" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:970px;height:90px;" src="./菜鸟教程在线编辑器_files/saved_resource(1).html"></iframe></ins></ins></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+        </div>
+                <hr>
+
+				<p>Copyright © 2013-2017<a target="_blank" href="http://www.runoob.com/">菜鸟教程</a></p>
+			</div>
+		</div>
+	</footer>
+</div>
+<script>
+var mixedMode = {
+name: "htmlmixed",
+scriptTypes: [{matches: /\/x-handlebars-template|\/x-mustache/i,
+               mode: null},
+              {matches: /(text|application)\/(x-)?vb(a|script)/i,
+               mode: "vbscript"}]
+};
+var editor = CodeMirror.fromTextArea(document.getElementById("textareaCode"), {
+	mode: mixedMode,
+	selectionPointer: true,
+	lineNumbers: false,
+	matchBrackets: true,
+	indentUnit: 4,
+	indentWithTabs: true
+});
+
+window.addEventListener("resize", autodivheight);
+
+var x = 0;
+function autodivheight(){
+    var winHeight=0;
+    if (window.innerHeight) {
+        winHeight = window.innerHeight;
+    } else if ((document.body) && (document.body.clientHeight)) {
+        winHeight = document.body.clientHeight;
+    }
+    //通过深入Document内部对body进行检测，获取浏览器窗口高度
+    if (document.documentElement && document.documentElement.clientHeight) {
+        winHeight = document.documentElement.clientHeight;
+    }
+    height = winHeight*0.68
+    editor.setSize('100%', height);
+    document.getElementById("iframeResult").style.height= height +"px";
+}
+
+function submitTryit() {
+  var text = editor.getValue();
+  var patternHtml = /<html[^>]*>((.|[\n\r])*)<\/html>/im
+  var patternHead = /<head[^>]*>((.|[\n\r])*)<\/head>/im
+  var array_matches_head = patternHead.exec(text);
+  var patternBody = /<body[^>]*>((.|[\n\r])*)<\/body>/im;
+  
+  var array_matches_body = patternBody.exec(text);
+  var basepath_flag = 1;
+  var basepath = '';
+  if(basepath_flag) {
+    basepath = '<base href="//www.runoob.com/try/demo_source/" target="_blank">';
+  }
+  if(array_matches_head) {
+    text = text.replace('<head>', '<head>' + basepath );
+  } else if (patternHtml) {
+    text = text.replace('<html>', '<head>' + basepath + '</head>');
+  } else if (array_matches_body) {
+    text = text.replace('<body>', '<body>' + basepath );
+  } else {
+    text = basepath + text;
+  }
+  var ifr = document.createElement("iframe");
+  ifr.setAttribute("frameborder", "0");
+  ifr.setAttribute("id", "iframeResult");  
+  document.getElementById("iframewrapper").innerHTML = "";
+  document.getElementById("iframewrapper").appendChild(ifr);
+ 
+  var ifrw = (ifr.contentWindow) ? ifr.contentWindow : (ifr.contentDocument.document) ? ifr.contentDocument.document : ifr.contentDocument;
+  ifrw.document.open();
+  ifrw.document.write(text);  
+  ifrw.document.close();
+  autodivheight();
+}
+submitTryit();
+autodivheight();
+</script>
+<div style="display:none;">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?8e2a116daf0104a78d601f40a45c75b4";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+
+</div>
+<iframe frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" style="display: none;" src="./菜鸟教程在线编辑器_files/saved_resource(2).html"></iframe></body></html>

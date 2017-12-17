@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>top</title>
+		<style>
+			*{
+				margin:0;
+				padding:0;
+			}
+			ul{
+				list-style: none;
+				position: relative;
+			}
+			li>.bg{
+				width: 100%;
+				height: 149px;
+			}
+			.logo1{
+				display: inline-block;
+			
+				width: 1000px;
+				font-family: HanziPenSC-W3;
+				font-size: 68px;
+				position: absolute;
+				top: 0px;
+				left:8%;
+			}
+			p{
+				position: absolute;
+				top:41px;
+				right:70px;
+				color: #333;
+				font-size: 18px;
+				cursor: pointer;
+			}
+			p:hover{
+				color: rgba(250,250,250,.5);
+			}
+			.log{
+				position: absolute;
+				top:10px;
+				left:100px;
+			}
+			.pp{
+				position: absolute;
+				right: 15px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li style="position: relative; height: 142px; line-height: 142px">
+				<img src="http://pic13.photophoto.cn/20091204/0020032907449490_b.jpg" class="bg"></img>
+				<img src="black.png" alt="" class="log" >
+				<a href="index.php" target="_top"><p>峰腾管理平台</p></a>
+				<a onclick="return confirm('确定退出吗？')" href="end.php" target="_top"><p class="pp">退出账户</p></a>
+			</li>
+		</ul>
+	</body>
+	</html>	

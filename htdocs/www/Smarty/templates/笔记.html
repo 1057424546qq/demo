@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		数据传递（三） assign();
+		1、单独数据 
+			php:$num=100;
+				$title = 'Smarty';
+				$smarty->assign('title',$title);
+				$smarty->assign('num',$num);
+			html:{$num} {$title}
+		2、一维数据
+			php:$arr['id']=1;
+				$arr['name']='张三';
+				$arr['sex']=2;
+				$arr['age']=20;
+				$smarty->assign('arr',$arr);
+			html:{$arr.id}
+				{if $arr.sex eq 1}checked{/if}
+				
+		3、二维数据
+			php:$link = mysqli_connect('127.0.0.1', 'root', 'root',  'test');
+				$result = mysqli_query($link, 'select * from book');
+				$list = mysqli_fetch_all($result,MYSQLI_ASSOC);
+				print_r($list);
+				$smarty->assign('list',$list);
+			html:{foreach $list as $v}{/foreach}
+			
+			
+		无限级分类
+		
+	</body>
+</html>

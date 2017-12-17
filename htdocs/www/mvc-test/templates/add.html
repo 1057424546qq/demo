@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <title>Document</title>
+  <style>
+  #mydiv img{
+  	width: 50px;
+  }
+  </style>
+</head>
+<body>
+<div id="form-div">
+        <form id="myForm" method="post" enctype="multipart/form-data" action="index.php?act=upload">
+          <input type="hidden" name="id" value="{$id}">
+          <table class="table table-hover table-striped">
+              <tr><th>项目</th><th>值</th></tr>
+              <tr><th>商品</th><td><input type="text" name="title" value="{$list.title}"></td></tr>
+              <tr><th>描述</th><td><textarea name="des">{$list.des}</textarea></td></tr>
+              <tr><th>链接</th><td><input type="url" name="url" value="{$list.url}"></td></tr>
+              <tr><th>价格</th><td><input type="text" name="price" value="{$list.price}"></td></tr>
+              <tr><th>排序</th><td><input type="text" name="ord" value="{$list.ord}"></td></tr>
+              <tr><th>封面</th>
+                <td>
+                  <div id="mydiv1">
+                    <img src="" class="header">
+                  </div>
+                  <input type="file" name="pic" id="myimg1" value="{$list.pic}">
+                </td>
+              </tr>
+            <tr><td></td><td>
+            <input type="submit" value="提交" class="btn btn-success btn-sm" />
+            <input type="button" value="返回" class="btn btn-success btn-sm" onclick="history.go(-1)">
+            </td></tr>
+          </table>
+
+        </form>
+      </div>
+
+</body>
+</html>

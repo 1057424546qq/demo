@@ -1,0 +1,257 @@
+/**/
+/**/
+blockquote,body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,hr,input,legend,li,ol,p,pre,td,textarea,th,ul {margin:0;padding:0}    
+h1,h2,h3,h4,h5,h6 {font-size:100%}    
+address,cite,dfn,em,var {font-style:normal}    
+code,kbd,pre,samp {font-family:courier new,courier,monospace}    
+small {font-size:12px}    
+ol,ul {list-style:none}    
+a {text-decoration:none}    
+a:hover {text-decoration:none}    
+sup {vertical-align:text-top}    
+sub {vertical-align:text-bottom}    
+legend {color:#000}    
+fieldset,img {border:0}    
+button,input,select,textarea {font-size:100%}    
+table {border-collapse:collapse;border-spacing:0}
+
+*{
+	font-family: [PingFang];
+}
+span{
+	font-size: 48px;
+}
+p{font-size: 30px;}
+b{font-weight:400 ; font-size: 20px;
+display: inline-block;
+	width: 157px;
+	height: 50px;
+	line-height:50px ;
+	text-align: center;
+	background: url(../img/yuan.png) no-repeat ;
+	
+}
+span,p,b,a{cursor: pointer;}
+/**/
+.shop_bn{
+	width: 100%;
+	background:url(../img/创意灯首页_03.png)no-repeat center center ;
+	background-color:#444444 ;
+	height: 110px;
+}
+.shop_nav{
+	width: 100%;
+	height: 40px;
+	background: #333333;
+} 
+.shop_nav_box{
+	margin: 0 auto;
+	width: 1200px;
+	
+	line-height: 40px;
+}
+.shop_nav_box ul li{
+	width: 117px ;
+	float: left;
+	height: 39px;
+	text-align: center;
+}
+.nav_frist{background: #181818;}
+.shop_nav_box ul li a{
+	color: #FFFFFF;
+	font-size:14px ;
+}
+
+.shop_nav_box ul li:hover{
+	background-color: #181818;
+	transition: all 0.5s;
+}
+.banner{
+	width: 100%;
+	height: 600px;
+	background-color:#FFFFFF ;
+	text-align: center;
+	font-family:PingFang ;
+	position: relative;
+}
+.banner span{
+	display: block;
+	padding-top:60px ;
+	font-size:48px ;
+}
+.banner p{
+	font-size:30px ;
+	padding-bottom:40px ;
+}
+.content{
+	background-color: #EEEEEE;
+	width: 100%;
+	height: auto;
+	position: relative;
+	
+}
+.content_box{
+	width: 1200px;
+	margin: 0 auto;
+}
+.show{
+	list-style: none;
+	height: 200px;
+	margin: 20px 0px ;
+}
+.show li{
+	width: 382px;
+	height: 200px;
+	float: left;
+	padding: 0 20px;
+	display: inline-block;
+	color: #FFFFFF;
+}
+
+.show li:nth-child(1){
+	background: url(../img/创意灯首页_23.png);
+	margin-right:27px ;
+}
+.show li:nth-child(2){
+	margin-right:27px ;
+	background: url(../img/创意灯首页_25.png);
+}.show li:nth-child(3){
+	background: url(../img/创意灯首页_27.png);
+}
+.show li img{
+	float: right;
+}
+.show li div{float: left;margin-top: 55px;}
+.show li span{	
+	font-size: 30px;
+}
+.show li p{
+	font-size: 20px;
+}
+.ad{
+	height: 500px;
+	margin-bottom: 20px;
+	background-color: #FFFFFF;
+}
+.round{
+	display: inline-block;
+	width: 10px;height: 10px;
+	border-radius:50% ;
+	background-image: linear-gradient(#67e2ea,#919ef4);
+	margin: 17px 20px  10px;
+}
+.ad1 .ad_font{
+	padding: 120px 0 0 60px;
+	float: left;
+}
+.ad_font span{
+	display: inline-block;
+	margin-bottom: 50px;
+}
+.ad1 img{
+	padding-right: 40px;
+	float: right;
+}
+.ad2 .ad_font{
+	padding-top: 120px;
+	
+	float: right;
+}
+.ad2{
+	text-align: right;
+	padding-right: 60px;
+}
+.ad2 img{
+	padding-left: 40px;
+	float: left;
+}
+.ad2 div p{
+	height: 45px;
+	display: block;
+	position: relative;
+}
+.ad2 div p i{
+	float: right;
+}
+.ad2 div b{
+	margin-right: 20px;
+}
+.ad1 div p i{
+	float: left;
+}
+b{
+	border-radius:50px ;
+	margin-top: 80px;
+	margin-left: 20px;
+}
+b:hover{
+
+	transition: all 0.4s; 
+	box-shadow: 0px 0px  20px  rgba(200,200,200,0.5);
+}
+.hot_shop{
+	margin-top: 48px;
+}
+.hot_title p{
+	display: inline-block;
+	padding: 0 20px;
+	border-left:6px solid #c9c9c9 ;
+	margin-bottom: 35px;
+}
+.hot_content{
+	
+}
+.hot_content ul li {
+	background: #FFFFFF;
+	text-align: center;
+	display: inline-block;
+	float: left;
+	height: 373px;
+	width: 285px;
+	margin-right:20px ;
+	margin-bottom:20px ;
+	transition: all 0.4s; 
+	
+	
+}
+.hot_content ul li:nth-child(4n+1) .beijing{
+	height: 2px;
+	background: url(../img/创意灯首页_38.png);
+}
+.hot_content ul li:nth-child(4n+2) .beijing{
+	height: 2px;
+	background: url(../img/创意灯首页_40.png);
+}
+.hot_content ul li:nth-child(4n+3) .beijing{
+	height: 2px;
+	background: url(../img/创意灯首页_42.png);
+}
+.hot_content ul li:nth-child(4n+4) .beijing{
+	height: 2px;
+	background: url(../img/创意灯首页_44.png);	
+}
+.hot_content ul li:nth-child(4n+4){
+	margin-right:0px ;
+}
+
+.tit{
+	color: #000000;
+}
+.grey_tit{
+	color: #666666;
+}
+.price_tit{
+	color: #ff6709;
+}
+.hot_font{
+	margin-top: 10px;
+}
+.hot_font p{
+	margin-top: 5px;
+	font-size: 18px;
+}
+.hot_content ul li:hover{
+	box-shadow: 0px 0px 20px rgba(100,100,100,0.5);
+	transform: scale(1.01);
+	transition: all 0.4s; 
+}

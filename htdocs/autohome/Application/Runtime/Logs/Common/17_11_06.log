@@ -1,0 +1,12 @@
+[ 2017-11-06T14:35:03+08:00 ] 127.0.0.1 /mycar/autohome_car
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020218s ]
+ERR: 无法加载模块:Mycar
+
+[ 2017-11-06T14:36:18+08:00 ] 127.0.0.1 /mycar
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000400s ]
+ERR: 无法加载模块:Mycar
+

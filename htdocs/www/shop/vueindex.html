@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title></title>
+    <link href="cjk/bootstrap.css" rel="stylesheet">
+    <script src="cjk/jquery.js"></script>
+    <script src="cjk/bootstrap.js"></script>
+    <script src="cjk/flexible.js"></script>
+    <script src="cjk/vue.js"></script>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_425735_5jn1oxur4ab2csor.css">
+    <link rel="stylesheet" type="text/css" href="css/vuehoutai.css"/>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_425735_avialfnmnh0ssjor.css" />
+    <script src="cjk/jquery.form.min.js"></script>
+    <script src="js/houtai.js"></script>
+    
+  </head>
+  <body>
+       	<!--顶部-->
+       <div class="banner">
+       		<!--背景层-->
+       		<div class="color">
+	       					<input type="color" name="" id="mycolor" value="#000000" /><br />
+	       					<div class="color_btn"><input type="button" name="" id="f" value="取消" />
+	       					<input type="button" name="" id="t" value="确定" /></div>
+	       	</div>
+       		<div class="bj">
+       			<div class="title">
+       				<div class="title_left">
+       					<b>后台管理系统</b>
+       					<span>后台管理</span>
+       				</div>
+       				<div class="title_right">
+	       				<span>管理员：<i>admin<b class="iconfont icon-jiantouxia"></b>
+	       					<ul class="list-group user">
+	       					<li class="list-group-item">个人信息</li>
+	       					<li class="list-group-item">切换账户</li>
+	       					<li class="list-group-item">退出</li>
+	       				</ul>
+	       				</i>
+	       				
+	       				</span>
+	       				
+	       				<span class="skin_box">
+	       					<b class="iconfont icon-skin" title="换肤"></b>
+	       				<ul class="list-group skin">
+	       					<li class="list-group-item" value="1">黑色（默认）</li>
+	       					<li class="list-group-item"value="2">蓝色</li>
+	       					<li class="list-group-item"value="3">红色</li>
+	       					<li class="list-group-item"value="4">紫色</li>
+	       					<li class="list-group-item"value="5">自定义</li>
+	       				</ul>
+	       				
+	       				</span>
+       				</div>
+       				
+       			</div>
+       			
+       		</div>
+       			
+       		
+       		<div class="banner_con">
+       			
+       		</div>
+       </div>
+        <!--左部-->
+        <div id="app" v-cloak >
+        
+			<div class="left" >
+        		
+        		<div class="list">
+				<ul class="yiji">
+					<li><a href="#" class="inactive">商品管理</a>
+						<ul style="display: none">
+							<li><a href="#" @click="getList">商品列表</a></li> 
+							<li><a href="#">商品分类</a></li>
+							<li><a href="#">增加商品</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="inactive">会员管理</a>
+						<ul style="display: none">
+							<li><a href="#">基本信息</a></li> 
+							<li><a href="#">修改密码</a></li> 
+							<li><a href="#">退出登录</a></li> 
+						</ul>
+					</li>
+					<li><a href="#" class="inactive">组织机构</a>
+						<ul style="display: none">
+							<li><a href="#" class="inactive active">美协机关</a>
+								<ul>
+									<li><a href="#">办公室</a></li>
+									<li><a href="#">人事处</a></li>
+									<li><a href="#">组联部</a></li>
+									<li><a href="#">外联部</a></li>
+									<li><a href="#">研究部</a></li>
+									<li><a href="#">维权办</a></li>
+								</ul>
+					</li> 
+					
+					<li><a href="#" class="inactive active">中国文联美术艺术中心</a>   
+						<ul>
+							<li><a href="#">综合部</a></li>
+							<li><a href="#">大型活动部</a></li>
+							<li><a href="#">展览部</a></li>
+							<li><a href="#">艺委会工作部</a></li>
+							<li><a href="#">信息资源部</a></li>
+							<li><a href="#">双年展办公室</a></li>
+						</ul>
+					</li> 
+				<li class="last"><a href="#">《美术》杂志社</a></li> 
+			</ul>
+		</li>
+	</ul>
+</div>
+        </div>
+        <!--内容区域-->
+        <div class="content">
+        		<div id="app">
+        			<ol class="breadcrumb">
+    					<li><a href="#">Home</a></li>
+				    <li><a href="">商品管理</a></li>
+				    <li class="active">商品列表</li>
+				</ol>
+        			<div class="con"> 
+        				<div class="list-div">
+        					<div class="dropdown" style="float: left;margin-bottom:20px ;">
+  							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >
+    {{sort_name}}
+    <span class="caret"></span></button>
+	    
+    
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" >
+							    <li v-for="v in sort"><a href="javascript:void(0)"  :data-id="v.id" @click="sort_id">{{v.name}}</a></li>
+							    <li role="separator" class="divider"></li>
+							    <li><a href="javascript:void(0)" @click="back">全部显示</a></li>
+							  </ul>
+						</div>
+		
+						<div class="btn-group" role="group" aria-label="..." style="float: right;margin-bottom:20px ;">
+					  			<a href="javascript:void(0)" @click="edit"><button type="button" class="btn btn-default">添加商品</button></a>
+						</div>	
+	
+	<table class="table table-hover" style="width: 100%;">
+		<tr>
+	       <th>序号</th>
+	       <th>标题</th>
+	       <th>副标题</th>
+	       <th style="max-width: 300px;">链接</th>
+	       <th>素材图</th>
+	       <th>单价</th>
+	       <th>操作</th>
+	       
+	  </tr>
+	<tr v-for=" v in list">
+        <td v-for=" n in ">{{v.id}}</td>
+        
+        <td>{{v.title}}</td>
+        <td style="color: #666666;">{{v.des}}</td>
+        <td><a href="v.url">查看</a></td>
+        <td><img style="height: 50px;text-align: center; "  :src="'../shop/admin/img/'+v.pic" alt=""/></td>
+        <td>{{v.price}}</td>
+		<td> 
+		 	<a href="javascript:void(0)" @click="edit" :data-id="v.id" ><span class="iconfont icon-xiugai" :data-id="v.id"></span></a>
+	 
+		  	<a onclick="return confirm('确定删除吗？')" href="" ><span class="iconfont icon-shanchu"></span></a>
+  	   </td>
+ </tr>
+</table>
+		<ul class="pagination" style="position: absolute; bottom: 0px;left: 40%;" style="transition: all 0.5s;">
+		    <!--上一页-->
+		    <li><a href="javascript:void(0)" @click="getList" :data-page="pre_page">&laquo;</a></li>
+		   	
+		   	<li v-for="n in num_page" class="hover" :class="n==page?'active':''"><a href="javascript:void(0)"   @click="getList" :data-page="n">{{n}}</a></li>
+			<!--下一页-->
+			<li><a href="javascript:void(0)" @click="getList" :data-page="next_page">&raquo;</a></li>
+		</ul>
+     </div>
+        
+		        		<div class="edit-div">
+		        			 <form id="myform"  action="admin/shop_revise_post.php" method="post" enctype="multipart/form-data">
+							
+							<table class="table table-hover" style="width: 100%;" >
+							
+								<div id="mydiv" style="height: 200px;">
+									<img style="height: 200px;" :src="'../shop/admin/img/'+(lab.pic==''?'background.jpg':lab.pic)" alt="" />
+								</div>
+								<tr><th><input type="hidden" name="id"  :value="lab.id" /></th></tr>
+								<input type="hidden" name="img2" value="" />
+								
+								<tr><th>素材图：</th><td><input type="file" name="pic" id="time_img" /></td></tr>
+								<tr><th>分类：</th><td>
+									<select name="pid">
+										
+										<option value="<?php echo $i?>"></option>
+										
+									</select></td>
+								</tr>
+								<tr><th>标题：</th><td><input type="text" name="title" :value="lab.title"/></td></tr>
+								<tr><th>副标题：</th>
+									<td>
+										<textarea name="des" rows="3" cols="19">{{lab.des}}</textarea>
+									
+								</tr>
+								<tr><th>单价：</th><td><input type="text" name="price" :value="lab.price"/></td></tr>
+								<tr><th>链接：</th><td><input type="text" name="url" :value="lab.url"/></td></tr>
+								<tr>
+									<td><input type="submit"  value="提交"/></td>
+									<td><input type="button" @click="back" value="返回"/></td>
+								</tr>
+						</table>
+						
+					</form>		
+		        		</div>
+        				
+        			</div>
+        		
+        			<div class="ad" ></div>
+        			
+        			
+        		</div>
+        		
+        </div>
+    
+        </div>
+        <!--底部-->
+        
+        <!--js/vue-->
+        <script>
+        
+        		var app = new Vue({
+        			el:'#app',
+        			data:{
+        				pageall:1,
+        				page:1,
+        				pre_page:1,
+        				next_page:1,
+        				list:'',
+        				sort:'',
+        				sort_name:'请选择分类',
+        				lab:'',
+        				num_page:[1,2,3,4,5],
+        				pid:''
+        				
+        			
+        			},
+        			methods:{
+        				sort_id:function(e){
+        					var _this = this;
+        					
+        					var pid = _this.pid;
+        					if(e){
+        						pid = e.target.dataset.id;
+        						_this.pid = pid;
+        						if(pid>0){
+        							_this.sort_name = e.target.innerHTML;
+        						}
+        					}
+        					
+        					_this.getList(event,pid);
+        					
+        				},
+        				
+        				getList:function(e,id){
+        					var _this = this;
+        					var page = this.page;
+        					var pid = this.pid;
+						
+        					if(e){
+        						page = e.target.dataset.page;
+        					}
+	        				$.get('vueindex.php',{page:page,pid:pid},function(data){
+								
+							data = eval('('+data+')');
+//							console.log(data)
+							//_this.sort_name = data.sort_name.name;
+							_this.list = data.list;
+							_this.sort = data.sort;
+							_this.page = data.page;
+							_this.pageall = data.pageall;
+							_this.next_page = data.next_page;
+							_this.pre_page = data.pre_page;
+//							console.log(_this.pageall);
+								if(_this.pageall<5){
+//	        							alert(1)
+	        							_this.num_page = [];
+	        							for(var j=1;j<=_this.pageall;j++){
+	        								_this.num_page.push(j)
+	        							}
+	        						}
+								
+						});
+	        					var start = page-2;
+	        					var end = start+4;
+	        					if(page>=4 && page<_this.pageall-1){
+	        						_this.num_page = [];
+	        						for(var i=start;i<=end;i++){
+	        							_this.num_page.push(i);
+	        						}
+	        					}else if(page<4){
+	        						_this.num_page = [1,2,3,4,5];
+	        					}
+	        					
+	        					
+        				},
+        				
+        				edit:function(e){
+        					var _this = this;
+						console.log(e);
+						
+						if(e.target.dataset.id>0){
+							var id = e.target.dataset.id;
+							$.get("vueindex_edit.php",{id:id},function(data){
+								_this.lab = eval('('+data+')');
+								console.log(_this.lab);
+							})
+						}
+			
+						$('.edit-div').css({'transform': 'translateY(0px)'});
+        					
+        				},
+        				back:function(){ 
+        					this.pid='';
+        					this.page=1;
+	        				this.getList();
+	        				this.sort_name = '请选择分类';
+	        				$('.edit-div').css({'transform': 'translateY(-800px)'});
+        				}
+        			},
+        			mounted:function(){
+        				this.getList();
+        				var _this = this;
+        				$('#myform').ajaxForm(function(){   
+       				//$('#myForm')[0].reset();
+       				$(".edit-div").css('transform','translateY(-800px)');
+       					_this.getList();
+   					});
+        			},
+        			watch:function(){
+        				
+        			}
+        			
+        		});
+        </script>
+  </body>
+  
+</html>

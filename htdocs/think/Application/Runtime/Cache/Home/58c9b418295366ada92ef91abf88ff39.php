@@ -1,0 +1,14 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主页</title>
+		<link rel="stylesheet" href="/think/Public/css/bootstrap.css" />
+	</head>
+	<body>
+		
+		<p><a href="/shop/shop_list">列表页</a></p>
+		<p><a href="/shop/shop_add">增加</a></p>
+		
+	</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		1.下载安装MAMP
+
+    https://www.mamp.info/en/downloads/
+
+2.环境测试 http://localhost
+
+3.环境介绍
+
+WAMP
+
+MAMP:
+
+M:Mac
+
+A:Apache  WEB服务器
+
+M:MySQL  数据库
+
+phpmyadmin MySQL管理系统
+
+http://localhost/phpmyadmin/
+
+P:PHP       编译执行PHP
+
+htdocs/代码文件
+
+4.
+
+MySQL存储方式
+
+数据库-->数据表--->字段(列)
+
+select * from student
+
+select * from 表名
+
+查询
+
+select * from student where num="110"
+
+select * from book  where id>0  order by id desc
+
+select * from book  where id>0  order by id desc limit 10
+
+        字段1                 条件2        排序3            条数4
+
+select * from book  limit 1;
+
+select * from book order by id desc limit 1;
+
+select * from book;
+
+5.MySQL 存储类型
+
+数字:  int(10)  smallint(6)  tinyint(1)  float(6,3) 999.999
+
+字符: char(10)   varchar(255)可变长度    text
+
+jd商品表goods
+
+id               int(10) 主键
+
+title            varchar(60)
+
+about         varchar(255)
+
+price          float(8,2)
+
+code          char(7)
+
+sort_id       smallint(6)
+
+content      text
+
+price_zhe  tinyint(1)
+
+sale_num  int(10)
+
+send_time date
+
+
+
+select * from goods
+
+select id,title,price,sale_num from goods
+
+select id,title,price,sale_num from goods order by price asc sale_num desc
+
+select id,title from goods order by send_time desc limit 2
+
+select id,title from goods order by sale_num desc limit 3
+
+select id,title,price from goods where price>=500 and price<=999
+
+order by price desc  limit 20
+
+
+
+分页原理
+
+select  id,title  from goods limit 0,2  page=1
+
+select  id,title  from goods limit 2,2  page=2
+
+select  id,title  from goods limit 4,2  page=3
+
+size = 2;
+
+page = 1;
+
+start = (page-1)*size
+
+
+
+select id,title,price from goods where sort_id=1 order by price desc limit 1
+
+select id,title,price from goods where code="5105026" limit 1;
+
+select id,title from goods where title like "%米%"
+
+select id,content from goods where content like "%像素%"
+
+select id,content from goods where content like "李%"
+
+
+
+insert into  goods  set title="荣耀 V9",price="2099.00",
+
+about="下单立减200！",code="4835578",sort_id="1",
+
+content="热点：双卡双待，快速充电，指纹",
+
+price_zhe="88",sale_num="0",send_time="2017-08-24"
+
+
+
+update goods set  title="荣耀 V8",price="2999.00",
+
+about="下单立减200！",code="4835578",sort_id="1",
+
+content="热点：双卡双待，快速充电，指纹",
+
+price_zhe="88",sale_num="10000",send_time="2017-08-24"
+
+where id=6 limit 1
+
+
+
+delete from goods where id=6  limit 1
+	</body>
+</html>

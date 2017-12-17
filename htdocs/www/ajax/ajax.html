@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <title></title>
+    <link href="cjk/bootstrap.css" rel="stylesheet">
+    <script src="cjk/jquery.js"></script>
+    <script src="cjk/bootstrap.js"></script>
+    <script src="cjk/flexible.js"></script>
+    <link rel="stylesheet" type="text/css" href=""/>
+    <script src=""></script>
+  </head>
+  <body>
+  	
+  	<div class="mydiv">
+  		<ul>
+  			<li data-id='{{data.id}}'></li>
+  		</ul>
+  	</div>
+  	<button value="GET" id="btn">GET</button>
+        
+        <script type="text/javascript">
+        
+        $('#btn').click(function(){
+        		
+        		$.get("ajax.php",function(data){
+        			da = eval('('+data+')');
+        			console.log(da);
+        			var mycon = '';
+        			for (var i=0;i<da.length;i++) {
+        				mycon=da[i].id
+        			}
+        			$('.mydiv ul li').html(mycon);
+        		});
+        	});
+        		
+        </script>
+      
+  </body>
+</html>

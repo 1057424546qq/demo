@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://cdn.bootcss.com/socket.io/2.0.4/socket.io.js"></script>
+</head>
+<body>
+	<div id="mydiv" style="width: 300px;height: 300px;border: 1px solid #ff00ff;"></div>
+	<input type="text" value="">
+	<button>发送</button>
+
+<script>
+	var mydiv = document.getElementById('mydiv');
+	var socket = io('http://localhost:8080');
+	socket.on('welcome',function(data){
+		console.log(data);
+		mydiv.innerHTML += (data+'<br/>');
+	})
+	socket.emit('return_msg',function(data){
+		console.log(data);
+		mydiv.innerHTML += (data+'<br/>');
+	})
+</script>
+</body>
+</html>
